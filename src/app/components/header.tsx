@@ -1,5 +1,6 @@
 'use client'
-import { Menu, X } from "lucide-react";
+import { faBars, faX } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from "next/image";
 import { useState } from "react";
 
@@ -11,7 +12,7 @@ export const Header = () => {
     }
     return (
         <>
-            <header className="fixed w-full h-20 bg-[var(--tertiary-color)] shadow-md flex justify-center items-center p-2">
+            <header className="w-full h-20 bg-[var(--tertiary-color)] shadow-md flex justify-center items-center p-2">
                 <div className="flex items-center justify-between max-w-7xl w-full">
                     <div className="flex items-center">
                         <Image
@@ -42,7 +43,7 @@ export const Header = () => {
                         className="sm:hidden block cursor-pointer mr-2"
                         onClick={handleMenu}
                     >
-                        <Menu size={28} />
+                        <FontAwesomeIcon icon={faBars} size="2x" />
                     </button>
 
                 </div>
@@ -57,7 +58,7 @@ export const Header = () => {
                 `}
             >
                 <div>
-                    <X className="ml-auto cursor-pointer" onClick={handleMenu} />
+                    <FontAwesomeIcon icon={faX} className="ml-auto cursor-pointer" onClick={handleMenu} />
                 </div>
                 <div className="p-4">
                     <ul className="flex flex-col gap-4 text-[var(--secondary-color)]">
