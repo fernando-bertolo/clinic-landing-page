@@ -3,6 +3,7 @@ import { faBars, faX } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from "next/image";
 import { useState } from "react";
+import { ButtonSchedule } from './button.schedule';
 
 export const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -31,12 +32,7 @@ export const Header = () => {
                         </ul>
                     </div>
 
-                    <button
-                        type="button"
-                        className="hidden sm:block p-3 bg-[var(--primary-color)] text-white rounded-md font-medium text-sm cursor-pointer hover:bg-[var(--primary-color-hover)]"
-                    >
-                        Agendar Consulta
-                    </button>
+                    <ButtonSchedule />
 
                     <button
                         type="button"

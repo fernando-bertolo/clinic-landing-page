@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import "./globals.css";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "São Marcos Odontologia",
@@ -29,6 +30,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
+      <Script src="https://kit.fontawesome.com/0809767475.js"></Script>
       <body
         className={`antialiased`}
       >
