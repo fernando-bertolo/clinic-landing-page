@@ -1,13 +1,13 @@
 import Image from "next/image"
 import { ButtonSchedule } from "./button.schedule"
 
-export const Sobre = () => {
+export const Home = () => {
     return (
-        <section className="flex max-w-7xl w-full p-8 gap-6">
+        <section className="flex flex-col sm:flex-row max-w-7xl w-screen h-screen sm:p-8 gap-6 items-center justify-center">
             <div className="w-[50%] flex justify-center">
-                <div className="flex flex-col gap-4">
-                    <h3 className="uppercase font-regular text-[var(--primary-color)] text-xl">Clinica Odontológica Especializada</h3>
-                    <h1 className="font-bold text-5xl">
+                <div className="flex flex-col sm:gap-8">
+                    <h3 className="uppercase font-regular text-[var(--primary-color)] text-xs sm:text-xl">Clinica Odontológica Especializada</h3>
+                    <h1 className="font-bold text-2xl sm:text-5xl">
                         Sorrisos perfeitos <br />
                         através da <br />
                         <span className="text-[var(--primary-color)]">excelência</span> em <br />

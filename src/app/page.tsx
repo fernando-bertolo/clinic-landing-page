@@ -1,11 +1,11 @@
 import { Header } from "./components/header";
-import { Sobre } from "./components/sobre";
+import { Home } from "./components/home";
 
-export default function Home() {
+export default function App() {
   return (
     <main className="w-screen h-screen bg-[var(--tertiary-color)] flex flex-col items-center">
       <Header />
-      <Sobre />
+      <Home />
     </main>
   )
 }
