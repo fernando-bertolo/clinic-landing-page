@@ -32,7 +32,15 @@ export const Header = () => {
                         </ul>
                     </div>
 
-                    <ButtonSchedule />
+                    <button
+                        type="button"
+                        className={`
+                        hidden sm:flex p-3 bg-[var(--primary-color)] gap-2 justify-center items-center text-white rounded-md font-medium text-sm cursor-pointer hover:bg-[var(--primary-color-hover)]
+                    `}
+                    >
+                        <i className="fa-brands fa-whatsapp fa-lg"></i>
+                        Agendar Consulta
+                    </button>
 
                     <button
                         type="button"
@@ -45,13 +53,19 @@ export const Header = () => {
                 </div>
             </header>
 
+            {isOpen && (
+                <div
+                    className="fixed inset-0 bg-black opacity-50 z-40"
+                    onClick={handleMenu}
+                />
+            )}
             {/* Header Mobile */}
             <div
                 className={`
-                    fixed top-0 right-0 h-full w-64 bg-white shadow-lg transform transition-transform duration-300 ease-in-out z-20
-                    p-4
-                    ${isOpen ? 'translate-x-0' : 'translate-x-full'}
-                `}
+                        fixed top-0 right-0 h-full w-64 bg-white shadow-lg transform transition-transform duration-300 ease-in-out z-50
+                        p-4
+                        ${isOpen ? 'translate-x-0' : 'translate-x-full'}
+                    `}
             >
                 <div>
                     <FontAwesomeIcon icon={faX} className="ml-auto cursor-pointer" onClick={handleMenu} />
@@ -67,8 +81,9 @@ export const Header = () => {
                         <li className="mt-4">
                             <button
                                 type="button"
-                                className="w-full p-3 bg-[var(--primary-color)] text-white rounded-md font-medium text-sm"
+                                className="flex w-full p-3 bg-[var(--primary-color)] gap-2 justify-center items-center text-white rounded-md font-medium text-sm cursor-pointer hover:bg-[var(--primary-color-hover)]"
                             >
+                                <i className="fa-brands fa-whatsapp fa-lg"></i>
                                 Agendar Consulta
                             </button>
                         </li>
