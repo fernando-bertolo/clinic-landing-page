@@ -8,6 +8,7 @@
   --primary-color-hover: oklch(0.6 0.118 184.704); /* bg-teal-600 */
 
   --secondary-color: oklch(0.554 0.046 257.417); /* bg-slate-500 */
+  --secondary-color-subtitle: oklch(0.372 0.044 257.287); /* bg-slate-700 */
 
   --tertiary-color: #FFFFF; /* bg-white */
   --font-family: Inter, sans-serif;

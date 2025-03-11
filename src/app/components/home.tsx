@@ -1,15 +1,16 @@
 import Image from "next/image"
+import Link from "next/link"
 
 export const Home = () => {
     return (
-        <section className="flex flex-col sm:flex-row max-w-7xl w-screen h-[calc(100% - 80px)] sm:h-screen p-4 sm:p-8 gap-6 items-center justify-center">
+        <section className="flex flex-col-reverse sm:flex-row max-w-7xl w-screen h-[calc(100% - 80px)] sm:h-screen p-8 gap-6 items-center justify-center">
             <div className="w-full sm:w-[50%] flex justify-center">
-                <div className="flex flex-col gap-4 sm:gap-8 text-center sm:text-left">
+                <div className="flex flex-col gap-8 text-center sm:text-left">
                     <h3 className="uppercase font-regular text-[var(--primary-color)] text-md sm:text-xl">Clinica Odontológica Especializada</h3>
-                    <h1 className="font-bold text-3xl sm:text-5xl">
+                    <h1 className="font-bold text-3xl sm:text-5xl text-nowrap">
                         Sorrisos perfeitos <br />
-                        através da <br />
-                        <span className="text-[var(--primary-color)]">excelência</span> em <br />
+                        através da <br className="hidden sm:block" />
+                        <span className="text-[var(--primary-color)]"> excelência</span> em <br />
                         odontologia!
                     </h1>
 
@@ -19,13 +20,15 @@ export const Home = () => {
                     </p>
 
                     <div className="flex justify-center sm:justify-start gap-4">
-                        <button
-                            type="button"
-                            className="flex p-3 bg-[var(--primary-color)] gap-2 justify-center items-center text-white rounded-md font-medium text-sm cursor-pointer hover:bg-[var(--primary-color-hover)]"
-                        >
-                            <i className="fa-brands fa-whatsapp fa-lg"></i>
-                            Agendar Consulta
-                        </button>
+                        <Link href={"https://wa.me/19997444101?text=Vim%20pelo%20site!%20Quero%20agendar%20uma%20consulta"} target="_blank">
+                            <button
+                                type="button"
+                                className="flex p-3 bg-[var(--primary-color)] gap-2 justify-center items-center text-white rounded-md font-medium text-sm cursor-pointer hover:bg-[var(--primary-color-hover)]"
+                            >
+                                <i className="fa-brands fa-whatsapp fa-lg"></i>
+                                Agendar Consulta
+                            </button>
+                        </Link>
 
                         <button
                             type="button"

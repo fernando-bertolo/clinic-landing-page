@@ -2,8 +2,8 @@
 import { faBars, faX } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from "next/image";
+import Link from 'next/link';
 import { useState } from "react";
-import { ButtonSchedule } from './button.schedule';
 
 export const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -32,15 +32,18 @@ export const Header = () => {
                         </ul>
                     </div>
 
-                    <button
-                        type="button"
-                        className={`
-                        hidden sm:flex p-3 bg-[var(--primary-color)] gap-2 justify-center items-center text-white rounded-md font-medium text-sm cursor-pointer hover:bg-[var(--primary-color-hover)]
-                    `}
-                    >
-                        <i className="fa-brands fa-whatsapp fa-lg"></i>
-                        Agendar Consulta
-                    </button>
+                    <Link href={"https://wa.me/19997444101?text=Vim%20pelo%20site!%20Quero%20agendar%20uma%20consulta"} target="_blank">
+
+                        <button
+                            type="button"
+                            className={`
+                            hidden sm:flex p-3 bg-[var(--primary-color)] gap-2 justify-center items-center text-white rounded-md font-medium text-sm cursor-pointer hover:bg-[var(--primary-color-hover)]
+                        `}
+                        >
+                            <i className="fa-brands fa-whatsapp fa-lg"></i>
+                            Agendar Consulta
+                        </button>
+                    </Link>
 
                     <button
                         type="button"
@@ -79,13 +82,16 @@ export const Header = () => {
                         <li>Contato</li>
                         {/* Incluindo o botão no menu lateral */}
                         <li className="mt-4">
-                            <button
-                                type="button"
-                                className="flex w-full p-3 bg-[var(--primary-color)] gap-2 justify-center items-center text-white rounded-md font-medium text-sm cursor-pointer hover:bg-[var(--primary-color-hover)]"
-                            >
-                                <i className="fa-brands fa-whatsapp fa-lg"></i>
-                                Agendar Consulta
-                            </button>
+                            <Link href={"https://wa.me/19997444101?text=Vim%20pelo%20site!%20Quero%20agendar%20uma%20consulta"} target="_blank">
+
+                                <button
+                                    type="button"
+                                    className="flex w-full p-3 bg-[var(--primary-color)] gap-2 justify-center items-center text-white rounded-md font-medium text-sm cursor-pointer hover:bg-[var(--primary-color-hover)]"
+                                >
+                                    <i className="fa-brands fa-whatsapp fa-lg"></i>
+                                    Agendar Consulta
+                                </button>
+                            </Link>
                         </li>
                     </ul>
                 </div>
