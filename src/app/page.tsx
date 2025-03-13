@@ -1,4 +1,5 @@
 import { About } from "./components/about";
+import { CarouselImage } from "./components/carouselImage";
 import { Header } from "./components/header";
 import { Home } from "./components/home";
 
@@ -9,6 +10,7 @@ export default function App() {
       <div className="flex flex-col gap-20">
         <Home />
         <About />
+        <CarouselImage />
       </div>
     </main>
   )
