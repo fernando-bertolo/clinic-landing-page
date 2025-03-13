@@ -29,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-br" className="scroll-smooth scroll-pt-20">
+    <html lang="pt-br" className="scroll-smooth scroll-pt-20 sm:scroll-pt-0">
       <Script src="https://kit.fontawesome.com/0809767475.js"></Script>
       <body
         className={`antialiased`}
