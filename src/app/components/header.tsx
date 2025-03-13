@@ -13,7 +13,7 @@ export const Header = () => {
     }
     return (
         <>
-            <header className="w-full h-20 bg-[var(--tertiary-color)] shadow-md flex justify-center items-center p-2">
+            <header className="fixed top-0 z-10 w-full h-20 bg-[var(--tertiary-color)] shadow-md flex justify-center items-center p-2">
                 <div className="flex items-center justify-between max-w-7xl w-full">
                     <div className="flex items-center">
                         <Image
@@ -24,8 +24,12 @@ export const Header = () => {
                         />
                         <ul className="hidden sm:flex gap-4 text-[var(--secondary-color)]">
                             <li>|</li>
-                            <li className="hover:text-[var(--primary-color)] cursor-pointer">Home</li>
-                            <li className="hover:text-[var(--primary-color)] cursor-pointer">Sobre</li>
+                            <Link href={"#home"}>
+                                <li className="hover:text-[var(--primary-color)] cursor-pointer">Home</li>
+                            </Link>
+                            <Link href={"#about"}>
+                                <li className="hover:text-[var(--primary-color)] cursor-pointer">Sobre</li>
+                            </Link>
                             <li className="hover:text-[var(--primary-color)] cursor-pointer">Serviços</li>
                             <li className="hover:text-[var(--primary-color)] cursor-pointer">Depoimentos</li>
                             <li className="hover:text-[var(--primary-color)] cursor-pointer">Contato</li>
@@ -65,8 +69,7 @@ export const Header = () => {
             {/* Header Mobile */}
             <div
                 className={`
-                        fixed top-0 right-0 h-full w-64 bg-white shadow-lg transform transition-transform duration-300 ease-in-out z-50
-                        p-4
+                        fixed top-0 right-0 h-full w-64 bg-[var(--tertiary-color)] shadow-lg transform transition-transform duration-300 ease-in-out z-50 p-4
                         ${isOpen ? 'translate-x-0' : 'translate-x-full'}
                     `}
             >
@@ -75,8 +78,12 @@ export const Header = () => {
                 </div>
                 <div className="p-4">
                     <ul className="flex flex-col gap-4 text-[var(--secondary-color)]">
-                        <li>Home</li>
-                        <li>Sobre</li>
+                        <Link href={"#home"} onClick={handleMenu}>
+                            <li>Home</li>
+                        </Link>
+                        <Link href={"#about"} onClick={handleMenu}>
+                            <li>Sobre</li>
+                        </Link>
                         <li>Serviços</li>
                         <li>Depoimentos</li>
                         <li>Contato</li>

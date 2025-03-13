@@ -3,7 +3,10 @@ import Link from "next/link"
 
 export const Home = () => {
     return (
-        <section className="flex flex-col-reverse sm:flex-row max-w-7xl w-screen h-[calc(100% - 80px)] sm:h-screen p-8 gap-6 items-center justify-center">
+        <section
+            id="home"
+            className="flex flex-col-reverse sm:flex-row max-w-7xl w-screen h-[calc(100% - 80px)] sm:h-screen p-8 gap-6 items-center justify-center"
+        >
             <div className="w-full sm:w-[50%] flex justify-center">
                 <div className="flex flex-col gap-8 text-center sm:text-left">
                     <h3 className="uppercase font-regular text-[var(--primary-color)] text-md sm:text-xl">Clinica Odontológica Especializada</h3>
