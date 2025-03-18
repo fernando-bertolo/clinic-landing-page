@@ -4,7 +4,7 @@ export const About = () => {
     return (
         <section
             id="about"
-            className="flex flex-col sm:flex-row max-w-7xl w-screen h-[calc(100% - 80px)] sm:h-screen p-8 gap-6 items-center justify-center"
+            className="flex flex-col sm:flex-row max-w-7xl h-[calc(100% - 80px)] sm:h-screen p-8 gap-6 items-center justify-center"
         >
 
             <div className="w-full sm:w-[50%] flex justify-center items-center ">
