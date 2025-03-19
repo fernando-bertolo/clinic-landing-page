@@ -10,13 +10,13 @@ interface ImageProps {
 export const CarouselImage = ({ images }: { images: ImageProps[] }) => {
     return (
         <section
-            className="flex w-full sm:max-w-6xl max-w-xs h-[calc(100% - 80px)] sm:h-full p-8 gap-6 items-center justify-center"
+            className="flex w-full max-w-xs sm:max-w-4xl md:max-w-7xl h-[calc(100% - 80px)] sm:h-full sm:p-12 gap-6 items-center justify-center"
         >
             <Carousel
                 opts={{
                     align: "start",
                 }}
-                className="w-full max-w-xs sm:max-w-6xl"
+                className="w-full"
             >
                 <CarouselContent>
                     {images ? (
@@ -24,7 +24,7 @@ export const CarouselImage = ({ images }: { images: ImageProps[] }) => {
                             <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
                                 <div className="p-1">
                                     <Card className="p-0">
-                                        <CardContent className="flex aspect-square items-center justify-center p-0 max-h-90">
+                                        <CardContent className="flex aspect-square items-center justify-center p-0 max-h-80">
                                             <Image
                                                 src={image.src}
                                                 alt={image.alt}

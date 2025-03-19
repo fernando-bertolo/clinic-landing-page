@@ -2,6 +2,7 @@ import { About } from "./components/about";
 import { CarouselImage } from "./components/carouselImage";
 import { Header } from "./components/header";
 import { Home } from "./components/home";
+import { Service } from "./components/services";
 
 
 export default function App() {
@@ -35,6 +36,7 @@ export default function App() {
             },
           ]}
         />
+        <Service />
       </div>
     </main>
   )
