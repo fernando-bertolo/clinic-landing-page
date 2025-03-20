@@ -1,10 +1,11 @@
 import Image from "next/image"
+import Link from "next/link"
 
 export const About = () => {
     return (
         <section
             id="about"
-            className="flex flex-col sm:flex-row max-w-7xl h-[calc(100% - 80px)] sm:h-screen p-8 gap-6 items-center justify-center"
+            className="flex flex-col sm:flex-row max-w-7xl h-[calc(100% - 80px)] sm:h-screen p-14 sm:p-8 gap-6 items-center justify-center"
         >
 
             <div className="w-full sm:w-[50%] flex justify-center items-center ">
@@ -56,8 +57,9 @@ export const About = () => {
                             </div>
                         </div>
                     </div>
-
-                    <h4 className="text-[var(--primary-color)] cursor-pointer">Conheça nossos serviços {'->'}</h4>
+                    <Link href={"#service"}>
+                        <h4 className="text-[var(--primary-color)] cursor-pointer">Conheça nossos serviços {'->'}</h4>
+                    </Link>
                 </div>
             </div>
         </section>

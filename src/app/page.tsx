@@ -1,5 +1,6 @@
 import { About } from "./components/about";
 import { CarouselImage } from "./components/carouselImage";
+import { Feedback } from "./components/feedbacks";
 import { Header } from "./components/header";
 import { Home } from "./components/home";
 import { Service } from "./components/services";
@@ -37,6 +38,7 @@ export default function App() {
           ]}
         />
         <Service />
+        <Feedback />
       </div>
     </main>
   )

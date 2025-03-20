@@ -30,7 +30,9 @@ export const Header = () => {
                             <Link href={"#about"}>
                                 <li className="hover:text-[var(--primary-color)] cursor-pointer">Sobre</li>
                             </Link>
-                            <li className="hover:text-[var(--primary-color)] cursor-pointer">Serviços</li>
+                            <Link href={"#service"}>
+                                <li className="hover:text-[var(--primary-color)] cursor-pointer">Serviços</li>
+                            </Link>
                             <li className="hover:text-[var(--primary-color)] cursor-pointer">Depoimentos</li>
                             <li className="hover:text-[var(--primary-color)] cursor-pointer">Contato</li>
                         </ul>
@@ -84,7 +86,9 @@ export const Header = () => {
                         <Link href={"#about"} onClick={handleMenu}>
                             <li>Sobre</li>
                         </Link>
-                        <li>Serviços</li>
+                        <Link href={"#service"} onClick={handleMenu}>
+                            <li>Serviços</li>
+                        </Link>
                         <li>Depoimentos</li>
                         <li>Contato</li>
                         {/* Incluindo o botão no menu lateral */}

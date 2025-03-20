@@ -10,7 +10,7 @@ interface ImageProps {
 export const CarouselImage = ({ images }: { images: ImageProps[] }) => {
     return (
         <section
-            className="flex w-full max-w-xs sm:max-w-4xl md:max-w-7xl h-[calc(100% - 80px)] sm:h-full sm:p-12 gap-6 items-center justify-center"
+            className="flex w-full max-w-xs sm:max-w-4xl md:max-w-7xl h-[calc(100% - 80px)] sm:h-full p-8 sm:p-12 gap-6 items-center justify-center"
         >
             <Carousel
                 opts={{
