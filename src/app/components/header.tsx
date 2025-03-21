@@ -33,8 +33,12 @@ export const Header = () => {
                             <Link href={"#service"}>
                                 <li className="hover:text-[var(--primary-color)] cursor-pointer">Serviços</li>
                             </Link>
-                            <li className="hover:text-[var(--primary-color)] cursor-pointer">Depoimentos</li>
-                            <li className="hover:text-[var(--primary-color)] cursor-pointer">Contato</li>
+                            <Link href={"#feedback"}>
+                                <li className="hover:text-[var(--primary-color)] cursor-pointer">Depoimentos</li>
+                            </Link>
+                            <Link href={"#contact"}>
+                                <li className="hover:text-[var(--primary-color)] cursor-pointer">Contato</li>
+                            </Link>
                         </ul>
                     </div>
 
@@ -89,8 +93,12 @@ export const Header = () => {
                         <Link href={"#service"} onClick={handleMenu}>
                             <li>Serviços</li>
                         </Link>
-                        <li>Depoimentos</li>
-                        <li>Contato</li>
+                        <Link href={"#feedback"} onClick={handleMenu}>
+                            <li>Depoimentos</li>
+                        </Link>
+                        <Link href={"#contact"} onClick={handleMenu}>
+                            <li>Contato</li>
+                        </Link>
                         {/* Incluindo o botão no menu lateral */}
                         <li className="mt-4">
                             <Link href={"https://wa.me/19997444101?text=Vim%20pelo%20site!%20Quero%20agendar%20uma%20consulta"} target="_blank">
