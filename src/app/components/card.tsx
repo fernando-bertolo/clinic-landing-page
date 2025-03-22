@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 interface CardProps {
     title: string;
     description: string;
@@ -12,7 +14,9 @@ export const Card = ({ title, description }: CardProps) => {
                 {description}
             </p>
 
-            <h4 className="text-[var(--primary-color)] cursor-pointer">Saiba mais {'->'}</h4>
+            <Link href={"https://wa.me/19997444101?text=Vim%20pelo%20site!%20Quero%20agendar%20uma%20consulta"} target="_blank">
+                <h4 className="text-[var(--primary-color)] cursor-pointer">Saiba mais {'->'}</h4>
+            </Link>
         </div>
     )
 }

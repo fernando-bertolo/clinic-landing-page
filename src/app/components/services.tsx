@@ -4,10 +4,10 @@ export const Service = () => {
     return (
         <section
             id="service"
-            className="flex flex-col sm:flex-row max-w-7xl h-[calc(100% - 80px)] sm:h-screen p-8 gap-6 items-center justify-center"
+            className="flex flex-col sm:flex-row max-w-7xl h-[calc(100% - 80px)] sm:h-screen gap-6 items-center justify-center"
         >
 
-            <div className="flex flex-col gap-8 text-center sm:text-left justify-center items-center">
+            <div className="flex flex-col gap-8 text-center sm:text-left justify-center items-center ">
                 <h3 className="uppercase font-bold text-[var(--primary-color)] text-md sm:text-xl">Serviços</h3>
                 <h1 className="font-bold text-3xl sm:text-4xl text-nowrap text-center">
                     Tratamentos odontológicos <br />

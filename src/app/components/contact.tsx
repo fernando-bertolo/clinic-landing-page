@@ -6,7 +6,17 @@ export const Contact = () => {
             id="contact"
             className="flex flex-col sm:flex-row max-w-7xl h-[calc(100% - 80px)] h-screen p-8 gap-6 items-center justify-center"
         >
-            <div className="w-full flex justify-center gap-10 ">
+            <div className="w-full flex flex-col sm:flex-row justify-center gap-10 p-10">
+                <div className="flex">
+                    <Image
+                        src="/imageAbout.jpg"
+                        alt="Logo"
+                        className="flex w-full h-full rounded-2xl"
+                        width={500}
+                        height={500}
+                    />
+
+                </div>
                 <div className="flex flex-col justify-around gap-8 text-center sm:text-left">
                     <h1 className="font-bold text-xl text-left">Entre em contato conosco</h1>
 
@@ -14,7 +24,7 @@ export const Contact = () => {
                         <i className="fa-solid fa-phone text-2xl"></i>
                         <div className="flex flex-col">
                             <p className="font-bold text-left">Telefone</p>
-                            <p className="text-sm text-[var(--secondary-color)]">(19) 99904-4410</p>
+                            <p className="text-sm text-[var(--secondary-color)]">(19) 99744-4101</p>
                         </div>
                     </div>
 
@@ -41,16 +51,6 @@ export const Contact = () => {
                             <p className="text-sm text-[var(--secondary-color)] text-left">Consultas com hora marcada</p>
                         </div>
                     </div>
-                </div>
-                <div className="hidden sm:flex">
-                    <Image
-                        src="/imageAbout.jpg"
-                        alt="Logo"
-                        className="flex w-full h-full rounded-2xl"
-                        width={500}
-                        height={500}
-                    />
-
                 </div>
             </div>
         </section>
