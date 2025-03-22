@@ -33,12 +33,14 @@ export const Home = () => {
                             </button>
                         </Link>
 
-                        <button
-                            type="button"
-                            className="p-3 bg-[var(--tertiary-color)] border border-slate-200 text-black rounded-md font-medium text-sm cursor-pointer hover:bg-slate-100"
-                        >
-                            Nossos serviços
-                        </button>
+                        <Link href={"#service"}>
+                            <button
+                                type="button"
+                                className="p-3 bg-[var(--tertiary-color)] border border-slate-200 text-black rounded-md font-medium text-sm cursor-pointer hover:bg-slate-100"
+                            >
+                                Nossos serviços
+                            </button>
+                        </Link>
                     </div>
 
                     <div className="flex justify-center sm:justify-start gap-6">
